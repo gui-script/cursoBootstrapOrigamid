@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamHome</title>
+  <link rel="shortcut icon" href="./img/icons/dreamHomeLogo.png">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-5" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group mb-3">
+              <label for="loginEmail" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group mb-3">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+            <div>
+              <small id="emailHelp" class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fecha Modal -->
+
+  <nav class="navbar navbar-expand-lg fixed-top px-5 py-4">
+    <a class="navbar-brand fw-bold fs-3 text-black-50" href="#">
+      <img src="/img/icons/dreamHomeLogo.png" alt="Logo" class="d-inline-block mb-2 me-1">
+      DreamHome
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown me-2 fs-6">
+          <a class="nav-link dropdown-toggle text-black-50" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Search property</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Properties to rent</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Properties to buy</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">How to buy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown me-2 fs-6">
+          <a class="nav-link dropdown-toggle text-black-50" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Landlords</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Advertise property</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">How to sell</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item me-2 fs-6">
+          <a class="nav-link text-black-50" aria-current="page" href="#" style="min-width: 204px">Recommend
+            properties</a>
+        </li>
+        <li class="nav-item me-3 fs-6">
+          <a class="nav-link text-black-50" aria-current="page" href="#">About</a>
+        <li class="nav-item">
+          <a class="btn btn ms-md-2 btn-primary dreamHomeButton pe-auto fs-6 fw-semibold" role="button"
+            aria-pressed="true" data-bs-toggle="modal" data-bs-target="#modalLogin"
+            style="min-width: 90px; max-width: 120px;" href="#">Log in</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container-fluid mt-lg-5 px-lg-5 py-lg-5">
+    <div id="backgroundDiscover" class="m-2 rounded-5">
+      <h2 class="row display-0 pt-lg-5 ps-lg-5 pt-4 ps-4 text-black-50  fw-semibold ">
+        Discover your dream home
+      </h2>
+
+      <div class="row mx-lg-5 mx-3">
+        <div class="row g-3  col-lg-10">
+        <form class="row g-3  col-lg-10">
+          <div class="col-lg-3">
+            <label for="clienteNome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="clienteNome" placeholder="Nome completo">
+          </div>
+          <div class="col-lg-3">
+            <label for="clienteCPF" class="form-label">CPF</label>
+            <input type="" class="form-control" id="clienteCPF" placeholder="xxx.xxx.xxx-xx">
+          </div>
+          <div class="col-lg-3">
+            <label for="clienteEmail" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="clienteEmail" placeholder="Insira seu endereço de e-mail">
+          </div>
+          <div class="col-lg-3">
+            <label for="clienteSenha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="clienteSenha" placeholder="Senha de acesso">
+          </div>
+          <!-- <div class="col-12">
+              <label for="clienteEndereço" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="clienteEndereço" placeholder="Nome da rua, número e bairro">
+            </div>
+            <div class="col-md-6">
+              <label for="clienteCidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="clienteCidade" placeholder="Nome da cidade que você mora">
+            </div>
+            <div class="col-md-3">
+              <label for="clienteEstado" class="form-label">Estado</label>
+              <select id="clienteEstado" class="form-select text-secondary">
+                <option selected>Selecione</option>
+                <option>Rio de Janeiro</option>
+                <option>Santa Catarina</option>
+                <option>São Paulo</option>
+                <option>Bahia</option>
+                <option>Acre</option>
+              </select>
+            </div> -->
+
+
+        </form>
+        <div class="col-lg-2">
+          <button type="submit" class="btn btn-primary btn-lg ">Contratar Plano</button>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
+</body>

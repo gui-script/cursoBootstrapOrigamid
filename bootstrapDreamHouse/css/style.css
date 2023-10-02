@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#teste{
+  border: solid;
+}
+
+body {
+  padding-top: 75px;
+  background-color: F8F8F8;
+}
+
+.dreamHomeBackground {
+  background-color: #FFFFFF;
+}
+
+#backgroundDiscover {
+  height: 594px;
+  background: url('../img/discoverHouses.png') center center;
+  background-size: cover;
+}
+
+
+.dreamHomeButton:hover  {
+  background-color: #FFFFFF;
+  color: #F365BB;
+  border: solid 1px #F365BB;
+}
+
+@media (max-width: 992px) {
+  #home-quote .display-4 {
+    font-size: 2.5rem;
+  }
+
+  body {
+    padding-top: 0px;
+  }
+
+  .fixed-top {
+    position: relative;
+  }
+}
