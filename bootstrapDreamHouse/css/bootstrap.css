@@ -601,18 +601,13 @@ progress {
 }
 
 .display-0 {
-  font-size: calc(1.92rem + 1.88vw);
+  font-size: calc(2.6rem + 1.4vw);
   font-weight: 600;
   line-height: 1.2;
 }
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   .display-0 {
     font-size: 3rem;
-  }
-}
-@media (min-width: 1661px) {
-  .display-0 {
-    font-size: 3.8rem;
   }
 }
 
